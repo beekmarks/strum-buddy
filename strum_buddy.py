@@ -149,9 +149,9 @@ with st.sidebar:
 st.markdown(
     """
     <style>
+    header {display: none !important}
     .css-1jc7ptx, .e1ewe7hr3, .viewerBadge_container__1QSob,
     .styles_viewerBadge__1yB5_, .viewerBadge_link__1S137,
-    header {display: none !important}
     [data-testid="collapsedControl"] {
         display: none
     }
