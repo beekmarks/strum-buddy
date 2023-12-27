@@ -159,14 +159,6 @@ st.markdown(
     .viewerBadge_text__1JaDK {
         display: none !important;
     }
-    .viewerBadge_container__r5tak {
-        display: none !important;
-    }
-
-    .viewerBadge_link__qRIco svg {
-        display: none
-        }
-   
     </style>
     """,
     unsafe_allow_html=True
@@ -191,7 +183,9 @@ with left_col:
 
 
 with right_col:
-           
+            st.write('Strum Buddy is an intelligent assistant who can help you locate all of the online resources needed to learn how to play new songs on guitar.')
+            st.write('Simply provide a song title and artist and Strum Buddy will provide you with links to video tutorials and other helpful information from a variety of different websites.')
+            st.write('If you are unsure of what song to choose, or who might have recorded it, chatting with Strum Buddy can also help you out.')
             for role, message in st.session_state[conversation_state]:
                 with st.chat_message(role):
                     st.write(message)
