@@ -143,11 +143,35 @@ with st.sidebar:
 #######################################
 # MAIN
 #######################################
+
+#CSS to hide developer options when deployed
+#Comment out when developing locally to reveal debugging tools
+st.markdown(
+    """
+    <style>
+    .css-1jc7ptx, .e1ewe7hr3, .viewerBadge_container__1QSob,
+    .styles_viewerBadge__1yB5_, .viewerBadge_link__1S137,
+    header {display: none !important}
+    [data-testid="collapsedControl"] {
+        display: none
+    }
+    .st-emotion-cache-z5fcl4 {padding-top: 0 !important}
+    .viewerBadge_text__1JaDK {
+        display: none;
+    }
+    .viewerBadge_container__r5tak {
+        display: none;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 st.title("Strum Buddy")
 st.subheader("What song would you like to learn to play on guitar today?")
 status_placeholder = st.empty()
 st.chat_input(
-                placeholder="Give me a song name and the artist (e.g. Love Song by The Cure)",
+                placeholder="Song name and artist",
                 key=user_msg_input_key,
                 on_submit=on_text_input,
                 args=(status_placeholder,),
