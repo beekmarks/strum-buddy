@@ -157,11 +157,12 @@ st.markdown(
     }
     .st-emotion-cache-z5fcl4 {padding-top: 0 !important}
     .viewerBadge_text__1JaDK {
-        display: none;
+        display: none !important;
     }
     .viewerBadge_container__r5tak {
-        display: none;
+        display: none !important;
     }
+   
     </style>
     """,
     unsafe_allow_html=True
