@@ -162,6 +162,10 @@ st.markdown(
     .viewerBadge_container__r5tak {
         display: none !important;
     }
+
+    .viewerBadge_link__qRIco svg {
+        display: none
+        }
    
     </style>
     """,
