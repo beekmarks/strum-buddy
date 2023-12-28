@@ -77,7 +77,7 @@ def on_text_input(status_placeholder):
     completed = False
 
     # Polling
-    with status_placeholder.status("OK! One minute while while I assemble all the resources you'll need.") as status_container:
+    with status_placeholder.status("OK! One minute while I assemble all the resources you'll need.") as status_container:
         #st.write(f"Launching run {get_run_id()}")
         st.write(f"Strum Buddy is Working...")
         while not completed:
