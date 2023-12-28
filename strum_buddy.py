@@ -188,8 +188,7 @@ with right_col:
             st.subheader("Don't you want Strum Buddy to love?")
             st.write('Strum Buddy is an intelligent assistant who can help you locate all of the online resources needed to learn how to play new songs on guitar.')
             st.write('Simply provide a song title and artist and Strum Buddy will provide you with links to video tutorials and other helpful information from a variety of different websites.')
-            st.write('If you are unsure of what song to choose, or who might have recorded it, chatting with Strum Buddy can also help you out.')
-            
+        
             for role, message in st.session_state[conversation_state]:
                 with st.chat_message(role):
                     st.write(message)
