@@ -1,6 +1,7 @@
 import json
 import time
 import streamlit as st
+import streamlit.components.v1 as components
 from openai import OpenAI
 
 #######################################
@@ -112,6 +113,14 @@ def on_text_input(status_placeholder):
                 #st.write(f"Completed run {get_run_id()}")
                 status_container.update(label="Strum Buddy is Done!", state="complete")
                 completed = True
+                components.html(
+    f"""
+        <script>
+            window.parent.document.querySelector('section.main').scrollTo(0, 0);
+        </script>
+    """,
+    height=0
+)
 
             else:
                 time.sleep(0.1)
@@ -164,15 +173,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.title("Strum Buddy")
-st.subheader("What song would you like to learn to play on guitar today?")
-status_placeholder = st.empty()
-st.chat_input(
-                placeholder="Song name and artist",
-                key=user_msg_input_key,
-                on_submit=on_text_input,
-                args=(status_placeholder,),
-            )
+
 
 left_col, right_col = st.columns(2)
 
@@ -183,15 +184,24 @@ with left_col:
 
 
 with right_col:
+            
+            st.subheader("Don't you want Strum Buddy to love?")
             st.write('Strum Buddy is an intelligent assistant who can help you locate all of the online resources needed to learn how to play new songs on guitar.')
             st.write('Simply provide a song title and artist and Strum Buddy will provide you with links to video tutorials and other helpful information from a variety of different websites.')
             st.write('If you are unsure of what song to choose, or who might have recorded it, chatting with Strum Buddy can also help you out.')
+            
             for role, message in st.session_state[conversation_state]:
                 with st.chat_message(role):
                     st.write(message)
             
 
-            
+status_placeholder = st.empty()
+st.chat_input(
+                placeholder="Provide a song name and artist",
+                key=user_msg_input_key,
+                on_submit=on_text_input,
+                args=(status_placeholder,),
+            )
 
 
 
