@@ -1,6 +1,6 @@
 <br>
 
-<img src="https://strum-buddy-n5sjbnsddt7kk8vbejctvo.streamlit.app/~/+/media/529ba1e98e88397896b160ae592971955589ba9bfab0ee5e46d5226b.png"/>
+<img src="https://strum-buddy-n5sjbnsddt7kk8vbejctvo.streamlit.app/~/+/media/529ba1e98e88397896b160ae592971955589ba9bfab0ee5e46d5226b.png" alt="Strum Buddy logo" style="margin-top:50px" width="100px" height="100px" />
 
 # Welcome to Strum Buddy 👋
 
