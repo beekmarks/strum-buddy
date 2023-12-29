@@ -1,6 +1,5 @@
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([URL_TO_YOUR_APP](https://strum-buddy-n5sjbnsddt7kk8vbejctvo.streamlit.app/))
-
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://strum-buddy-n5sjbnsddt7kk8vbejctvo.streamlit.app/)
 
 # Welcome to Strum Buddy 👋
 
